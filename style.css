@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --box-shadow-color: #9c9c9c;
+}
+body {
+  background-color: #e6e8e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 4em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.container {
+  background-color: #ffffff;
+  width: 90vmin;
+
+  padding: 80px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+.search-box input {
+  padding: 5px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #f1a566;
+  font-size: 16px;
+}
+.search-box button {
+  margin: 0px 20px;
+  padding: 12px 36px;
+  background-color: #f3b786;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  width: 30%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 15px #a8a8a8;
+  transition: box-shadow 0.5s;
+  outline: none;
+
+}
+
+.search-box button:hover {
+  box-shadow: 5px 5px 15px #aaa;
+  background-color: #f1a566;
+}
+
+.search-box input[type=reset] {
+  margin: 0px;
+  width: 30%;
+  padding: 15px 40px;
+  background-color: #f3b786;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 15px #a8a8a8;
+  transition: box-shadow 0.5s;
+  outline: none;
+}
+
+.search-box input[type=reset]:hover {
+  box-shadow: 5px 5px 15px #aaa;
+  background-color: #f1a566;
+}
+
+.result {
+  position: relative;
+  max-height: 40vh;
+  margin-top: 50px;
+  overflow-y: auto;
+}
+/* For Webkit browsers */
+.result::-webkit-scrollbar {
+  width: 12px;
+}
+
+.result::-webkit-scrollbar-track {
+  background: #f0eae6;
+}
+
+.result::-webkit-scrollbar-thumb {
+  background-color: #f1a566; 
+  border-radius: 20px; 
+  border: 3px solid #f1a566;
+}
+
+.result h3 {
+  font-size: 30px;
+  color: #1f194c;
+}
+.result .word {
+  display: flex;
+  justify-content: space-between;
+}
+.result button {
+  background-color: transparent;
+  color: #ae9cff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.result .details {
+  display: flex;
+  gap: 10px;
+  color: #b3b6d4;
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+}
+.word-meaning {
+  color: #575a7b;
+}
+.word-example {
+  color: #575a7b;
+  font-style: italic;
+  border-left: 5px solid  #f1a566;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+.error {
+  margin-top: 80px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 648px) {
+  .search-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+  }
+  .search-box button {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .search-box input {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .search-box input[type=reset] {
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .container {
+    padding: 30px 35px;
+  }
+}
+
+
