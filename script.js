@@ -4,16 +4,16 @@ const result = document.getElementById("result");
 const sound = document.getElementById("sound");
 const btn = document.getElementById("search-btn");
 const resetBtn = document.getElementById("reset-btn");
-const enterWord = document.getElementById("inp-word");
+const enterWord = document.getElementById("input-word");
 
 resetBtn.addEventListener("click", () => {
-  document.getElementById("inp-word").value = "";
+  document.getElementById("input-word").value = "";
   result.innerHTML = "";
 });
 
 // ======== function to fetch the words from the API=======
 function fetchWord() {
-  let inpWord = document.getElementById("inp-word").value;
+  let inpWord = document.getElementById("input-word").value;
   fetch(`${url}${inpWord}`)
     .then((response) => response.json())
     .then((data) => {
