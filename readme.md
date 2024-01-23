@@ -10,6 +10,12 @@ This is a simple web application that allows users to search for word definition
 - Display word details, including phonetics, part of speech, definitions, and examples.
 - Play pronunciation audio for the searched word.
 
+## Technolologies
+
+- HTML (Semantic Html)
+- CSS (Responsive Vanilla Css)
+- JavaScript (DOM Manipulation and Fetching API)
+
 ## Getting Started
 
 ### Prerequisites
