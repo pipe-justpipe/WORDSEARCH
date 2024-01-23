@@ -50,9 +50,9 @@ h1 {
   border-bottom: 3px solid #f1a566;
   font-size: 16px;
 }
-.search-box button {
+.search-box #search-btn {
   margin: 0px 20px;
-  padding: 12px 36px;
+  padding: 15px 40px;
   background-color: #f3b786;
   color: #fff;
   border: none;
@@ -65,12 +65,12 @@ h1 {
 
 }
 
-.search-box button:hover {
+.search-box #search-btn:hover {
   box-shadow: 5px 5px 15px #aaa;
   background-color: #f1a566;
 }
 
-.search-box input[type=reset] {
+.search-box #reset-btn {
   margin: 0px;
   width: 30%;
   padding: 15px 40px;
@@ -84,7 +84,7 @@ h1 {
   outline: none;
 }
 
-.search-box input[type=reset]:hover {
+.search-box #reset-btn:hover {
   box-shadow: 5px 5px 15px #aaa;
   background-color: #f1a566;
 }
@@ -155,7 +155,7 @@ h1 {
     gap: 30px;
     
   }
-  .search-box button {
+  .search-box #search-btn {
     width: 80%;
     margin: 0 auto;
     font-size: 14px;
@@ -165,7 +165,7 @@ h1 {
     margin: 0 auto;
     font-size: 12px;
   }
-  .search-box input[type=reset] {
+  .search-box #reset-btn {
     font-size: 14px;
     width: 80%;
     margin: 0 auto;
